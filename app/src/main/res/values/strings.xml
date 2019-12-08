@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Lesson5</string>
+    <string-array name="city">
+        <item>г. Москва</item>
+        <item>г. Санкт-Петербург</item>
+        <item>г. Новосибирск</item>
+        <item>г. Екатеринбург</item>
+        <item>г. Нижний Новгород</item>
+        <item>г. Казань</item>
+        <item>г. Челябинск</item>
+        <item>г. Омск</item>
+        <item>г. Самара</item>
+        <item>г. Ростов-на-Дону</item>
+        <item>г. Уфа</item>
+        <item>г. Красноярск</item>
+        <item>г. Пермь</item>
+        <item>г. Воронеж</item>
+        <item>г. Волгоград</item>
+    </string-array>
+    <string-array name="humudity">
+        <item>10%</item>
+        <item>15%</item>
+        <item>60%</item>
+        <item>35%</item>
+        <item>33%</item>
+        <item>50%</item>
+        <item>56%</item>
+        <item>70%</item>
+        <item>68%</item>
+        <item>62%</item>
+        <item>33%</item>
+        <item>11%</item>
+        <item>3%</item>
+        <item>16%</item>
+        <item>12%</item>
+    </string-array>
+    <string-array name="pressure">
+        <item>756 мм.р.с.</item>
+        <item>776 мм.р.с.</item>
+        <item>776 мм.р.с.</item>
+        <item>787 мм.р.с.</item>
+        <item>736 мм.р.с.</item>
+        <item>745 мм.р.с.</item>
+        <item>745 мм.р.с.</item>
+        <item>743 мм.р.с.</item>
+        <item>734 мм.р.с.</item>
+        <item>721 мм.р.с.</item>
+        <item>711 мм.р.с.</item>
+        <item>700 мм.р.с.</item>
+        <item>730 мм.р.с.</item>
+        <item>780 мм.р.с.</item>
+        <item>767 мм.р.с.</item>
+    </string-array>
+    <string-array name="temperature">
+        <item>-2</item>
+        <item>0</item>
+        <item>-20</item>
+        <item>10</item>
+        <item>40</item>
+        <item>21</item>
+        <item>22</item>
+        <item>43</item>
+        <item>32</item>
+        <item>-20</item>
+        <item>-12</item>
+        <item>11</item>
+        <item>-21</item>
+        <item>14</item>
+        <item>-60</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
