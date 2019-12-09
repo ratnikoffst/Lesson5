@@ -1,5 +1,6 @@
 package ru.ratnikoff.lesson5;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,18 +12,21 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import static android.view.View.INVISIBLE;
 import static android.widget.RadioGroup.VISIBLE;
 
 public class WeatherFragment extends Fragment implements CompoundButton.OnCheckedChangeListener {
     private final MainActivity mMainActivity;
+    private final FragmentTransaction mTransaction;
     private CityFragment.DataClimat mDataClimat;
     private TextView textHummidity, textPressure, textTemperature;
 
     public WeatherFragment(MainActivity mainActivity, CityFragment.DataClimat dataClimat) {
         mMainActivity = mainActivity;
         mDataClimat = dataClimat;
+        mTransaction = mainActivity.getSupportFragmentManager().beginTransaction();
     }
 
     @Nullable
@@ -75,6 +79,19 @@ public class WeatherFragment extends Fragment implements CompoundButton.OnChecke
                 }
                 break;
         }
+    }
+
+    @Override
+    public void onConfigurationChanged(@NonNull Configuration newConfig) {
+        mMainActivity.onBackPressed();
+        super.onConfigurationChanged(newConfig);
+
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
     }
 
     public void setData(CityFragment.DataClimat dataClimat) {

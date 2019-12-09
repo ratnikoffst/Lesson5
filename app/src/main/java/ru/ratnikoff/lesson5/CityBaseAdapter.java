@@ -46,7 +46,6 @@ public class CityBaseAdapter extends BaseAdapter {
     private void fillView(View convertView, int position) {
         TextView textView = convertView.findViewById(R.id.number_item);
         textView.setText("" + (position + 1));
-
         textView = convertView.findViewById(R.id.city);
         textView.setText(mCity.get(position));
         if (position == mCurrenPosition) {
