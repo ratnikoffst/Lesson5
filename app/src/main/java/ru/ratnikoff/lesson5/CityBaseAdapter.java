@@ -11,8 +11,8 @@ import java.util.Arrays;
 
 public class CityBaseAdapter extends BaseAdapter {
     private final MainActivity mMainActivity;
-    public int mCurrenPosition = -1;
-    //  private final CityFragment mCityFragment;
+    public int mCurrenPosition = NO_SELECTION;
+    public static final int NO_SELECTION = -1;
     ArrayList<String> mCity;
 
     public CityBaseAdapter(String[] mCity, MainActivity mMainActivity) {
